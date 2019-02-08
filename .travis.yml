@@ -8,7 +8,7 @@ install:
     - pip install codecov
 
 script:
-    - py.test --cov=grmpy
+    - py.test --cov=boupy
 
 after_success:
     - codecov
