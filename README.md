@@ -1,6 +1,6 @@
 # boupy
 
-``boupy``  is an open-source Python package for the identification of bounds for long run average treatment effects on transitions probabilities. In addition the project's objective is to motivate the further utilization of scientific computing and simulation studies as a tool for improving the understanding of economic models.
+``boupy``  is an open-source Python package for the identification of bounds for long run average treatment effects on transitions probabilities.
 The package's core code is for the most part based on R code of a project by Benedikt Kauf whereas our theoretical framework is build on a simplified version of the model presented by
 
 Johan Vikström, Geert Ridder and Martin Weidner. (2018). [Bounds on treatment effects on transitions.
