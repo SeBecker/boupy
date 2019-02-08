@@ -9,11 +9,8 @@ exclude = '''
   | \.mypy_cache
   | \.tox
   | \.venv
-  | development
-  | build
-  | dist
   | docs
-  | grmpy-egg-info
-
+  | boupy-egg-info
+  | .ipynb_checkpoints
 
 )/
