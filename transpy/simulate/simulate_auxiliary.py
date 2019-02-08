@@ -1,1 +1,0 @@
-"""This module includes auxiliary functions for the simulation process."""
