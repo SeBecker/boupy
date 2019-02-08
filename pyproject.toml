@@ -11,6 +11,5 @@ exclude = '''
   | \.venv
   | docs
   | boupy-egg-info
-  | .ipynb_checkpoints
 
 )/
