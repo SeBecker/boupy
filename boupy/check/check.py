@@ -1,13 +1,13 @@
 """This module provides some capabilities to check the integrity of the package."""
 import os
 
-import numpy as np
+from boupy.check.custom_exceptions import UserError
 
-from grmpy.check.custom_exceptions import UserError
 
 def check_consistency(init_dict):
-    """This function performs some basic checks regarding the integrity of the user's request.
-    There should be no uncontrolled terminations of the package once these checks are passed.
+    """This function performs some basic checks regarding the integrity
+    of the user's request. There should be no uncontrolled terminations
+    of the package once these checks are passed.
     """
     # Distribute details
     agents = init_dict["SIMULATION"]["agents"]
@@ -20,11 +20,13 @@ def check_consistency(init_dict):
             msg = "The specified number of {} needs to be larger than zero.".format(key)
             raise UserError(msg)
     if (share <= 0) | (share > 0.9):
-            msg = "The specified share of treated individuals have to be large than 0.0 and smaller than 0.9.".format(key)
-            raise UserError(msg)
+        msg = (
+            "The specified share of treated individuals have to be large"
+            " than 0.0 and smaller than 0.9.".format(key)
+        )
+        raise UserError(msg)
 
 
-        
 def check_presence_init(fname):
     """This function checks whether the model initialization file does in fact exist."""
     if not os.path.isfile(fname):
