@@ -10,10 +10,10 @@ from boupy.test.generate_init import random_init
 from boupy.simulate.simulate import simulate
 from boupy.test.auxiliary import cleanup
 
-NUM_TESTS = 100
+NUM_TESTS = 1000
 
 np.random.seed(1234235)
-seeds = np.random.randint(0, 1000, size=NUM_TESTS)
+seeds = np.random.randint(0, 10000, size=NUM_TESTS)
 directory = os.path.dirname(__file__)
 file_dir = os.path.join(TEST_RESOURCES_DIR, "regression_vault.boupy.json")
 

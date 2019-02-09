@@ -16,7 +16,7 @@ def test1():
     """The test runs a loop to check the consistency of the random init file
      generating process and the following simulation.
     """
-    for _ in range(10):
+    for _ in range(1000):
         random_init()
         simulate("test.boupy.yml")
 
@@ -27,7 +27,7 @@ def test2():
     """
     fname = TEST_RESOURCES_DIR + "/regression_vault.boupy.json"
     tests = json.load(open(fname))
-    random_choice = np.random.choice(range(len(tests)), 5)
+    random_choice = np.random.choice(range(len(tests)), 100)
     tests = [tests[i] for i in random_choice]
 
     for test in tests:
