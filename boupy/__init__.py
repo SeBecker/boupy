@@ -5,7 +5,7 @@ import pytest
 
 from boupy.simulate.simulate import simulate
 from boupy.boupy_config import PACKAGE_DIR
-import grmpy.grmpy_config
+import boupy.boupy_config
 
 
 def test():

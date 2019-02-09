@@ -1,5 +1,5 @@
 """This module contains test that check the code quality of the package."""
-from grmpy.grmpy_config import PACKAGE_DIR
+from boupy.boupy_config import PACKAGE_DIR
 from subprocess import CalledProcessError
 import subprocess
 import os
