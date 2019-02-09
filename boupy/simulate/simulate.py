@@ -21,8 +21,8 @@ def simulate(init_file):
     # Import Specifications and check for consistency
     init_dict = read(init_file)
     check_consistency(init_dict)
-
-    np.random.seed(init_dict["SIMULATION"]["seed"])
+    seed = init_dict["SIMULATION"]["seed"]
+    np.random.seed(seed)
 
     # Distribute parameters
     agents = init_dict["SIMULATION"]["agents"]
