@@ -27,7 +27,7 @@ def test2():
     """
     fname = TEST_RESOURCES_DIR + "/regression_vault.boupy.json"
     tests = json.load(open(fname))
-    random_choice = np.random.choice(range(len(tests)), 10000)
+    random_choice = np.random.choice(range(len(tests)), 100)
     tests = [tests[i] for i in random_choice]
 
     for test in tests:
@@ -36,10 +36,5 @@ def test2():
         df = simulate("test.boupy.yml")
 
         stat_new = np.sum(df.sum())
-
-        if not np.testing.assert_equal(stat, stat_new):
-            print(stat)
-            print(init_dict)
-            print(stat_new)
 
         np.testing.assert_equal(stat, stat_new)
